@@ -1,2 +1,2 @@
-# n1wrod
+# n1word
 n1自學
