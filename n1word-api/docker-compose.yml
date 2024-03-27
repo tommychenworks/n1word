@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  n1word-web:
+    image: n1word
+    ports:
+      - "7080:80"
+    environment:
+      - WordConfig__jsonfile=/app/data/word.json
+    volumes:
+      - words_data:/app/data
+    stdin_open: true
+    tty: true
+volumes:
+  words_data:
